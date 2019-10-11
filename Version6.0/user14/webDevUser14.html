@@ -109,7 +109,21 @@ hight="40" alt= "Cant be seen by mere mortals">               </div>
                                 Webpage made by <a href="/" target="_blank">[your name]</a>
 
                         </p>
-
+<script>
+(function() {
+    
+  $('h4').bind('click',function() {
+      console.log('clicked');
+      $(this).clone(true)appendTo('head');
+      
+  });  
+    
+    
+})();
+                    </script>
+                    
+                    
+                    </script>
                 </div>
 
         </div>
