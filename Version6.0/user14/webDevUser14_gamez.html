@@ -1,0 +1,88 @@
+<html lang="en">
+<!--Version 1.0 
+	Name:Aidan Sheehan
+	Date Completed: 9/5/19
+ -->
+<head>
+  
+ <link href="CSS/webDevUser14.css" rel="stylesheet" type="text/css"> 
+        
+    <style class="b"></style>
+
+    
+   <ul>
+<li><a href="webDevUser14.html">Home</a></li>
+
+<li><a href="webDevUser14_FAQ.html">FAQs</a></li>
+
+<li><a href="webDevUser14_gamez.html">Gov. Approved Games</a></li>
+    <li><a href="weather/Weather-App-JavaScript-master/index.html"> Weather :)</a></li>
+    <li><a href="movies/MovieAPI-master/index.html">Movie poster finder to get me all the points</a></li>
+       <li><a href="http://127.0.0.1:8080/help/help.html">Report crime</a></li>
+    </ul>
+    
+<table border="0" width="350" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img border="0" src="images/lady%20of%20the%20night.jpeg" width="152" height="216"></td>
+    <td>
+
+<form name="fire">
+Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+<p>
+<input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+</p>
+
+</form>
+
+<script>
+
+//Russian Roulette Game- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("뱅, 넌 죽었어")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+</script>
+
+<p align="center">This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
+
+</td>
+  </tr>
+</table>
+    <div class="container">
+<h2>Sevret</h2>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   
+    <script>
+(function(){
+    $('div.container').delegate('h2', 'click', function() {
+        console.log('clicked');
+        $(this).clone().appendTo('.container');
+    });
+    
+})();
+                            
+ 
+    
+    </script>
+<body>
+
+<center> My name is Aidan</center>
+
+</body>
+
+</html>
